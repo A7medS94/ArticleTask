@@ -6,3 +6,9 @@
 //
 
 import Foundation
+
+class BaseAPIModel<T:Codable>: Codable {
+    let status, copyright: String?
+    let num_results: Int?
+    let results: T?
+}

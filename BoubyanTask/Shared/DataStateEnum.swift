@@ -6,3 +6,13 @@
 //
 
 import Foundation
+
+enum DataState {
+    case loading
+    case finished(Result)
+        
+    enum Result {
+        case failure(Error)
+        case success
+    }
+}

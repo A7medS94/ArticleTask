@@ -6,3 +6,9 @@
 //
 
 import Foundation
+
+enum PeriodEnum: String {
+    case one = "1"
+    case seven = "7"
+    case thirty = "30"
+}
